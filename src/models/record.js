@@ -1,8 +1,14 @@
 import {Schema, model} from 'mongoose';
 
 const locationSchema = new Schema({
-	latitude: String,
-	longitude: String,
+	latitude: {
+		type: String,
+		required: true,
+	},
+	longitude: {
+		type: String,
+		required: true,
+	},
 });
 
 const recordSchema = new Schema({
