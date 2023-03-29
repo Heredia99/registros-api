@@ -3,7 +3,7 @@ import {ServerApiVersion} from 'mongodb';
 
 export async function connect() {
 	try {
-		await mongoose.connect('mongodb+srv://heredia:Cx0iRz4mDZ4SQhh8@recordcluster.flarhao.mongodb.net/?retryWrites=true&w=majority', {
+		await mongoose.connect(process.env.MONGO_URI, {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 			serverApi: ServerApiVersion.v1,
