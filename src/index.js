@@ -7,3 +7,5 @@ const server = http.createServer(app);
 server.listen(port, () => {
 	console.log(`Servidor abierto en localhost:${port}`);
 });
+
+export default server;

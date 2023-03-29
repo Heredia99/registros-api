@@ -2,11 +2,11 @@ import {Schema, model} from 'mongoose';
 
 const locationSchema = new Schema({
 	latitude: {
-		type: String,
+		type: Number,
 		required: true,
 	},
 	longitude: {
-		type: String,
+		type: Number,
 		required: true,
 	},
 });

@@ -35,7 +35,7 @@ export async function show(req, res) {
 				});
 		}
 		else
-			res.status(422).send({error: `${id} is not a valid mongoDB ID.`});
+			res.status(400).send({error: `${id} is not a valid mongoDB ID.`});
 	} catch (error) {
 		res.status(500).send(error);
 	}
